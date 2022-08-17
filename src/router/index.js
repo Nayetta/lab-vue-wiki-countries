@@ -8,7 +8,7 @@ const routes = [
     component: () => import("../components/CountriesList.vue"),
     children: [
       {
-        path: "/details",
+        path: "/list/:alpha3Code",
         name: "details",
         component: () => import("../components/CountryDetails.vue"),
       },
